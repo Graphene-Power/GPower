@@ -28,8 +28,6 @@ contract owned {
 	}
 }
 
-contract tokenRecipient {function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);}
-
 
 contract Utils {
 
@@ -171,5 +169,5 @@ contract Crowdsale is owned,Utils {
                  icoSaleTotalTokens-=tokensWeek5;
             }
         }
-	}
+    }
 }
