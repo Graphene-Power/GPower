@@ -213,7 +213,7 @@ contract GraphenePowerToken is Crowdsale {
 	
 	//*** Transfer Enabled ***//
 	function transfersEnabled() onlyOwner{
-	    require(transfersEnable);
+	    require(!transfersEnable);
 	    transfersEnable=true;
 	}
 }
